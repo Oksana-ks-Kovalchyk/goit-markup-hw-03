@@ -183,7 +183,6 @@ address {
 }
 
 .group.list {
-    display: flex;
     align-items: center;
     margin-left: auto;
 }
@@ -211,6 +210,7 @@ address {
 
 
 .btn {
+
     font-style: normal;
     font-family: inherit;
     font-size: 16px;
@@ -372,7 +372,6 @@ address {
 }
 
 .about-title {
-    width: 376px;
     margin: 0;
     margin-bottom: 50px;
     
@@ -402,7 +401,12 @@ address {
 
 /* Секція team  */
 
-
+.team-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
 .name {
     font-weight: 500;
     font-size: 16px;
@@ -425,6 +429,11 @@ address {
     
 /* Секція portfolio */
 
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .prtf {
     font-weight: 700;
     font-size: 18px;
@@ -433,12 +442,32 @@ address {
     color: var(--black-txt-cl);
 }
 
+.list-btn {
+    display: flex;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 611px;
+    list-style: none;
+
+}
+
+.tack:not(:last-child) {
+    margin-right: 8px;
+}
+
 .title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--black-txt-cl);
+
+    margin: 20px 24px 4px;
+    
+
 }
 
 .text {
@@ -449,6 +478,25 @@ address {
         letter-spacing: 0.03em;
     
         color: var(--main-txt-cl);
+
+        margin: 4px 24px 20px;
+
+}
+
+/* список карток */
+
+.card-sed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.page {
+    flex-basis: calc((100% - 60px) / 3);
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
 
 }
 
