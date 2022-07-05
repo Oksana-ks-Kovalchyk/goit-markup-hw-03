@@ -106,6 +106,7 @@ address {
 
 
 /* Секція хедер */
+
 .header {
     background-color:var(--main-bg-cl);
 }
@@ -127,10 +128,6 @@ address {
     margin-right: 50px;
 
 }
-.logo {
-    margin-right: 93px;
-
-}
 
 .container {
     width: 1200px;
@@ -145,6 +142,8 @@ address {
 /* logo */
 
 .logo {
+    margin-right: 93px;
+
     text-decoration: none;
     font-family: var(--secondary-font);
     font-style: normal;
@@ -182,9 +181,11 @@ address {
     color: var(--accent-txt-cl);
 }
 
-.group.list {
-    align-items: center;
-    margin-left: auto;
+
+
+.contacts {
+    display: flex;
+    
 }
 
 .contact {
@@ -195,13 +196,12 @@ address {
     list-style: none;
     text-decoration: none;
     color: var(--main-txt-cl);
-    padding: 9px;
+    margin-left: 50px;
+    
+    
 }
 
-.contact {
-    display: flex;
-    margin-left: 50px;
-}
+
 
 .contact:hover,
 .contact:focus {
@@ -213,21 +213,16 @@ address {
 
     font-style: normal;
     font-family: inherit;
-    font-size: 16px;
     text-align: center;    
     background-color: transparent;
-
     border-radius: 4px;
     border: 1px solid transparent;
-    
-    
 
     cursor: pointer;
 }
 
 .list-btn {
     display: flex;
-
 }
 
 .btn:hover,
@@ -244,8 +239,6 @@ address {
     letter-spacing: 0.03em;
     padding: 6px 22px;
     background:var(--btn-bg-cl)
-    
-
 }
 
 .btn-mode-dark {
@@ -261,9 +254,12 @@ address {
     background: var(--accent-txt-cl);
     font-weight: 700;
     line-height: 1.88;
+    font-size: 16px;
     
     align-items: center;
     letter-spacing: 0.06em;
+    margin-top: 30px;
+    
 
 }
 
@@ -276,7 +272,7 @@ address {
 }
 
 
-.section-title {
+.titles {
     border: 1px solid #000000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -297,7 +293,7 @@ address {
     background-color: greenyellow;
 }
 
-.section-title-mode-light {
+.titles-mode-light {
     color: var(--black-txt-cl);
     font-weight: 700;
     font-size: 14px;
@@ -306,7 +302,7 @@ address {
     text-transform: uppercase;
 }
 
-.section-title-mode-dark {
+.titles-mode-dark {
     color: var(--main-txt-cl);
     font-weight: 400;
     font-size: 14px;
@@ -339,9 +335,12 @@ address {
 
 .benefits-item {
     width: 270px;
-    margin-right: 30px;
 }
 
+.benefits-item:not(:last-child) {
+    margin-right: 30px;
+
+}
 
 
 .benefits-title {
@@ -350,10 +349,11 @@ address {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     
     color: var(--black-txt-cl);
 }
+
 .descrip {
     font-weight: 400;
     font-size: 14px;
@@ -401,32 +401,57 @@ address {
 
 /* Секція team  */
 
+.team {
+    background-color:#F5F4FA ;
+    
+}
+
 .team-title {
     text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-}
-.name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
     color:var(--black-txt-cl);
 }
 
-.list-team {
+
+.team-list {
     display: flex;
-    padding-bottom: 108px;
+    margin-top: 50px;
     
     font-size: 16px;
     line-height: 1.19;
     color: var(--main-txt-cl);
 }
 
-.team-item {
+.name {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--black-txt-cl);
+    margin-top: 30px;
+}
+
+.team-texts {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: var(--main-txt-cl);
+    font-weight: 400;
+}
+
+
+.team-item:not(:last-child) {
     margin-right: 30px;
 }
+
+.team-item {
+    background:var(--main-bg-cl);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+    margin-left: auto;
+}
     
+
 /* Секція portfolio */
 
 .portfolio {
@@ -472,14 +497,14 @@ address {
 
 .text {
     font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.88;
-        letter-spacing: 0.03em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
     
-        color: var(--main-txt-cl);
+    color: var(--main-txt-cl);
 
-        margin: 4px 24px 20px;
+    margin: 4px 24px 20px;
 
 }
 
@@ -495,7 +520,7 @@ address {
 
 .page {
     flex-basis: calc((100% - 60px) / 3);
-    background: #FFFFFF;
+    background: var(--main-bg-cl);
     border: 1px solid #EEEEEE;
 
 }
