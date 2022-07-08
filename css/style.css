@@ -87,6 +87,8 @@ address {
     margin-left: auto;
     margin-right: auto;
 
+    outline: 2px solid tomato;
+
 }
 
 .link {
@@ -102,13 +104,18 @@ address {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    
 }
 
+footer {
+    display: block;
+}
 
 /* Секція хедер */
 
 .header {
     background-color:var(--main-bg-cl);
+    
 }
 
 .header-list {
@@ -118,6 +125,9 @@ address {
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ECECEC;
+    
 }
 .header-nav {
     display: flex;
@@ -129,15 +139,6 @@ address {
 
 }
 
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-
-    outline: 2px solid tomato;
-}
 
 /* logo */
 
@@ -157,7 +158,6 @@ address {
 .span-web {
     color: var(--black-txt-cl);
 }
-
 
 
 .header-link {
@@ -182,7 +182,6 @@ address {
 }
 
 
-
 .contacts {
     display: flex;
     
@@ -198,16 +197,14 @@ address {
     color: var(--main-txt-cl);
     margin-left: 50px;
     
-    
 }
-
-
 
 .contact:hover,
 .contact:focus {
     color: var(--accent-txt-cl);
 }
 
+/* Кнопки */
 
 .btn {
 
@@ -243,43 +240,32 @@ address {
 
 .btn-mode-dark {
     color:var(--white-txt-cl);
-    display: flex;
     text-align: center;
     padding: 10px 32px;
     min-width: 200px;
     
 }
 
-.hero-btn {
-    background: var(--accent-txt-cl);
-    font-weight: 700;
-    line-height: 1.88;
-    font-size: 16px;
-    
-    align-items: center;
-    letter-spacing: 0.06em;
-    margin-top: 30px;
-    
 
-}
 
 /* common styles end */
 
 /* Секція Hero */
 
-.hero {
+
+.section-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--hero-bg-cl);
+    text-align: center;
+    
 }
 
-
-.titles {
-    border: 1px solid #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
 
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
+    width: 696px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
@@ -289,27 +275,22 @@ address {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-txt-cl);
+    margin-right: auto;
+    margin-left: auto;
 
-    background-color: greenyellow;
 }
 
-.titles-mode-light {
-    color: var(--black-txt-cl);
+.hero-btn {
+    background: var(--accent-txt-cl);
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
+    line-height: 1.88;
+    font-size: 16px;
 
-.titles-mode-dark {
-    color: var(--main-txt-cl);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-}
+    align-items: center;
+    letter-spacing: 0.06em;
+    margin-top: 30px;
 
+}
 
 .visually-hidden {
     position:absolute;
@@ -383,12 +364,13 @@ address {
 }
 
 .about-item {
-    display: flex;
     width: 370px;
-    margin-right: 30px;
-    
-
 }
+
+.about-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 
 .about,
 .team {
@@ -520,7 +502,7 @@ address {
 
 .page {
     flex-basis: calc((100% - 60px) / 3);
-    background: var(--main-bg-cl);
+    background-color: var(--main-bg-cl);
     border: 1px solid #EEEEEE;
 
 }
@@ -528,6 +510,8 @@ address {
 /* Секція футер */
 .footer {
     background-color: var(--hero-bg-cl);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .span {
@@ -555,4 +539,17 @@ address {
     letter-spacing: 0.03em;
     text-decoration: none;
 
+}
+
+.location {
+    margin-top: 20px;
+}
+
+.phone,
+.mail {
+    margin-top: 9px;
+}
+
+.footer.logo.link {
+    margin: o;
 }
