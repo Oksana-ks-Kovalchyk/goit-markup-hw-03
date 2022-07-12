@@ -120,12 +120,18 @@ footer {
 
 .header-list {
     display: flex;
+    
+    
+}
+
+.header-list.list {
+    margin-left: 93px;
+
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     border-bottom: 1px solid #ECECEC;
     
 }
@@ -143,8 +149,6 @@ footer {
 /* logo */
 
 .logo {
-    margin-right: 93px;
-
     text-decoration: none;
     font-family: var(--secondary-font);
     font-style: normal;
@@ -182,9 +186,13 @@ footer {
 }
 
 
-.contacts {
+.header.group.list {
     display: flex;
-    
+    margin-left: auto;
+}
+
+.contacts:not(:last-child) {
+    margin-right: 50px;
 }
 
 .contact {
@@ -195,7 +203,7 @@ footer {
     list-style: none;
     text-decoration: none;
     color: var(--main-txt-cl);
-    margin-left: 50px;
+    
     
 }
 
@@ -263,7 +271,6 @@ footer {
 
 
 .hero-title {
-    margin-top: 0;
     margin-bottom: 30px;
     width: 696px;
     font-family: 'Roboto';
@@ -288,7 +295,6 @@ footer {
 
     align-items: center;
     letter-spacing: 0.06em;
-    margin-top: 30px;
 
 }
 
@@ -346,6 +352,9 @@ footer {
 
 /* Секція About */
 
+.section.about {
+    padding-top: 0;
+}
 
 .about-list {
     display: flex;
@@ -514,6 +523,11 @@ footer {
     padding-bottom: 60px;
 }
 
+.address {
+    margin-top: 20px;
+
+}
+
 .span {
     color: var(--white-txt-cl)
 }
@@ -522,9 +536,9 @@ footer {
     color: var(--white-txt-cl);
 }
 
-.cl {
-    color: rgba(255, 255, 255, 0.6);
-    margin-left: 9px;
+.info:not(:last-child) {
+    margin-bottom: 9px;
+    
 }
 
 .location,
@@ -541,15 +555,9 @@ footer {
 
 }
 
-.location {
-    margin-top: 20px;
-}
 
 .phone,
 .mail {
-    margin-top: 9px;
+    color: rgba(255, 255, 255, 0.6);
 }
 
-.footer.logo.link {
-    margin: o;
-}
