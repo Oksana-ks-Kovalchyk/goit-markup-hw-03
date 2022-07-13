@@ -25,6 +25,11 @@ html {
     --main-bg-cl:#FFFFFF;
     --hero-bg-cl:#2F303A;
     --btn-bg-cl:#F5F4FA;
+    --team-bg-cl:#F5F4FA;
+
+    /* border color */
+    --header-cl:#ECECEC;
+    --portf-cl: #EEEEEE;
 }
 
 body {
@@ -87,8 +92,6 @@ address {
     margin-left: auto;
     margin-right: auto;
 
-    outline: 2px solid tomato;
-
 }
 
 .link {
@@ -115,7 +118,11 @@ footer {
 
 .header {
     background-color:var(--main-bg-cl);
-    
+}
+
+.header.border {
+    border-bottom: 1px solid var(--header-cl);
+
 }
 
 .header-list {
@@ -132,7 +139,6 @@ footer {
 .header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
     
 }
 .header-nav {
@@ -226,9 +232,6 @@ footer {
     cursor: pointer;
 }
 
-.list-btn {
-    display: flex;
-}
 
 .btn:hover,
 .btn:focus {
@@ -341,7 +344,7 @@ footer {
     color: var(--black-txt-cl);
 }
 
-.descrip {
+.descript {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -393,7 +396,7 @@ footer {
 /* Секція team  */
 
 .team {
-    background-color:#F5F4FA ;
+    background-color:var(--team-bg-cl) ;
     
 }
 
@@ -460,12 +463,10 @@ footer {
 
 .list-btn {
     display: flex;
+    justify-content: center;
     padding: 0;
     margin-top: 0;
-    margin-bottom: 34px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 611px;
+    margin-bottom: 50px;
     list-style: none;
 
 }
@@ -480,10 +481,7 @@ footer {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--black-txt-cl);
-
-    margin: 20px 24px 4px;
-    
-
+    margin-bottom: 4px;
 }
 
 .text {
@@ -494,8 +492,13 @@ footer {
     letter-spacing: 0.03em;
     
     color: var(--main-txt-cl);
+}
 
-    margin: 4px 24px 20px;
+.description {
+    padding: 20px 24px;
+    border-left:1px solid var(--portf-cl);
+    border-right:1px solid var(--portf-cl);
+    border-bottom:1px solid var(--portf-cl); 
 
 }
 
@@ -506,13 +509,13 @@ footer {
     flex-wrap: wrap;
     gap: 30px;
     padding: 0;
+    margin: 0;
     list-style: none;
 }
 
 .page {
     flex-basis: calc((100% - 60px) / 3);
     background-color: var(--main-bg-cl);
-    border: 1px solid #EEEEEE;
 
 }
 
